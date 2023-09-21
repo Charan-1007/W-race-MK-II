@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/frame">
 
-    
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragments"
         android:layout_width="match_parent"
@@ -35,7 +36,8 @@
         app:abb_tabs="@menu/tabs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:fitsSystemWindows="true"/>
 
 
 

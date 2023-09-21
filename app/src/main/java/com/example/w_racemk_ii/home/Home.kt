@@ -54,7 +54,7 @@ class Home : Fragment() {
                 R.anim.slide_in,  // Enter animation
                 R.anim.slide_out  // Exit animation
             )
-            transaction.replace(R.id.main_home, fragment)
+            transaction.replace(R.id.frame, fragment)
             transaction.addToBackStack(null) // Optional: Add to back stack
             transaction.commit()
         }, delayMillis.toLong())
