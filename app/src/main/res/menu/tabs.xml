@@ -3,9 +3,9 @@
     <item
         android:id="@+id/tab_home"
         android:icon="@drawable/home"
-        android:title="@string/home" />
+        android:title="@string/home"/>
     <item
         android:id="@+id/tab_alarm"
         android:icon="@drawable/about"
-        android:title="@string/about" />
+        android:title="@string/about"/>
 </menu>
