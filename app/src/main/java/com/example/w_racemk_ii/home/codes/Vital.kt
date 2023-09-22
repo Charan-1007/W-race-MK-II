@@ -169,7 +169,7 @@ class Vital : Fragment() {
             LanguageData(
                 "0D",
                 R.drawable.error,
-                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nApplication data logic node error\n\n𝐀𝐂𝐂𝐈𝐎𝐍:\nReload application data AB into PM backplane memory."
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nApplication data logic node error\n\n\uD835\uDC00\uD835\uDC02\uD835\uDC13\uD835\uDC08\uD835\uDC0E\uD835\uDC0D:\nReload application data AB into PM backplane memory."
             )
         )
 
@@ -561,7 +561,7 @@ class Vital : Fragment() {
             LanguageData(
                 "3E",
                 R.drawable.error,
-                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nWNC message module number error\n\n𝐀𝐂𝐂𝐈𝐎𝐍:\nReplace the PM board."
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nWNC message module number error\n\n\uD835\uDC00\uD835\uDC02\uD835\uDC13\uD835\uDC08\uD835\uDC0E\uD835\uDC0D:\nReplace the PM board."
             )
         )
 
@@ -569,7 +569,7 @@ class Vital : Fragment() {
             LanguageData(
                 "3F",
                 R.drawable.error,
-                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nWNC output message consistency error\n\n𝐀𝐂𝐂𝐈𝐎𝐍:\nReplace the PM board."
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nWNC output message consistency error\n\n\uD835\uDC00\uD835\uDC02\uD835\uDC13\uD835\uDC08\uD835\uDC0E\uD835\uDC0D:\nReplace the PM board."
             )
         )
 
@@ -1497,7 +1497,7 @@ class Vital : Fragment() {
             LanguageData(
                 "BE  (CHB)",
                 R.drawable.error,
-                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nDigisafe decoder SSI-SSI message identifier error\n\n𝐀𝐂𝐂𝐈𝐎𝐍:\nReplace the PM board"
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nDigisafe decoder SSI-SSI message identifier error\n\n\uD835\uDC00\uD835\uDC02\uD835\uDC13\uD835\uDC08\uD835\uDC0E\uD835\uDC0D:\nReplace the PM board"
             )
         )
 

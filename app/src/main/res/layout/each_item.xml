@@ -21,7 +21,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#97BEFF">
 
 
             <androidx.cardview.widget.CardView
@@ -38,7 +39,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:src="@drawable/error" />
+                    android:src="@drawable/error"
+                    android:background="#97BEFF"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -46,6 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="language"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -64,7 +67,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/constraintLayout" />
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            android:background="#97BEFF"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="17sp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
