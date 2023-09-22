@@ -71,40 +71,99 @@ class Rsa : Fragment() {
     private fun addDataToList() {
         mList.add(
             LanguageData(
-                "0001",
+                "D 0A",
                 R.drawable.error,
-                "𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nConsistency check of Common Core Inter-FPGA Interface ICD\nVersions between True and Comp channels/FPGA’s failed\n𝐏𝐑𝐎𝐂𝐄𝐒𝐒 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:\nTrue Common\n𝐀𝐂𝐓𝐈𝐎𝐍 𝐎𝐍 𝐅𝐀𝐈𝐋𝐔𝐑𝐄:\nReplace module"
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nApplication data layout error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
             )
         )
-
-        // Add other LanguageData items here...
-
-        // Example:
-        mList.add(
-            LanguageData(
-                "0101",
-                R.drawable.error,
-                "𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nIO Module Time Stamp Difference Check (True) found a difference\n𝐏𝐑𝐎𝐂𝐄𝐒𝐒 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:\nTrue Common\n𝐀𝐂𝐓𝐈𝐎𝐍 𝐎𝐍 𝐅𝐀𝐈𝐋𝐔𝐑𝐄:\nReplace module"
-            )
-        )
-
-
 
         mList.add(
             LanguageData(
-                "01A1",
+                "D 0B",
                 R.drawable.error,
-                "𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nIO Module Time Stamp Difference Check (True) found a difference\n𝐏𝐑𝐎𝐂𝐄𝐒𝐒 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:\nTrue Common\n𝐀𝐂𝐓𝐈𝐎𝐍 𝐎𝐍 𝐅𝐀𝐈𝐋𝐔𝐑𝐄:\nReplace module"
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nInstallation Address error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nCheck hard-wired installation address. Reload application data into RSA backplane memory"
             )
         )
-
 
         mList.add(
             LanguageData(
-                "1C01",
+                "D 0C",
                 R.drawable.error,
-                "𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nIO Module Time Stamp Difference Check (True) found a difference\n𝐏𝐑𝐎𝐂𝐄𝐒𝐒 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:\nTrue Common\n𝐀𝐂𝐓𝐈𝐎𝐍 𝐎𝐍 𝐅𝐀𝐈𝐋𝐔𝐑𝐄:\nReplace module"
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nApplication data Compatibility index error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
             )
         )
+
+        mList.add(
+            LanguageData(
+                "D 0D",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nCRC value error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 0E",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nApplication Data not present\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 14",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nNumber of RSAs error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 15",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nFiller Byte error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 16",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nRSA Interface ID error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 17",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nRSA Port Address Error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 18",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nNumber of Remote Interfaces error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 19",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nTimeout error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nReload application data into RSA backplane memory"
+            )
+        )
+
+        mList.add(
+            LanguageData(
+                "D 28",
+                R.drawable.error,
+                "𝐅𝐀𝐔𝐋𝐓 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:\nWatchdog error\n\n𝐀𝐂𝐓𝐈𝐎𝐍:\nRestart RSA. If error does not clear, replace PM or RSA module."
+            )
+        )
+
     }
 }
