@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home.codes.Vital"
-    android:background="#262534">
+    android:background="#262534"
+    android:clickable="true"
+    android:focusable="true">
 
     <TextView
         android:id="@+id/textView"

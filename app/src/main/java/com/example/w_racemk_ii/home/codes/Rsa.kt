@@ -1,6 +1,5 @@
 package com.example.w_racemk_ii.home.codes
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -54,8 +53,8 @@ class Rsa : Fragment() {
         if (query != null) {
             val filteredList = ArrayList<LanguageData>()
             for (i in mList) {
-                if (query?.lowercase(Locale.ROOT)
-                        ?.let { i.title.lowercase(Locale.ROOT).contains(it) } == true
+                if (query.lowercase(Locale.ROOT)
+                    .let { i.title.lowercase(Locale.ROOT).contains(it) }
                 ) {
                     filteredList.add(i)
                 }

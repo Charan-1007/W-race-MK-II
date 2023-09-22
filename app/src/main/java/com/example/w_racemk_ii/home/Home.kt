@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.FragmentTransaction
 import com.example.w_racemk_ii.R
 import com.example.w_racemk_ii.home.codes.NonVital
 import com.example.w_racemk_ii.home.codes.Rsa
 import com.example.w_racemk_ii.home.codes.Vital
+import com.example.w_racemk_ii.home.codes.images.NonVitalimage
+import com.example.w_racemk_ii.home.codes.images.Rsaimage
+import com.example.w_racemk_ii.home.codes.images.Vitalimage
 
 class Home : Fragment() {
 
@@ -19,6 +21,7 @@ class Home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+
 
         // Find the buttons by their IDs
         val button = view.findViewById<Button>(R.id.button)
@@ -39,6 +42,25 @@ class Home : Fragment() {
         button3.setOnClickListener {
             // Replace the current fragment with the RsaFragment
             replaceFragment(Rsa())
+        }
+
+
+        button.setOnLongClickListener {
+            // Display the first image when button1 is long-pressed
+            replaceFragment(Vitalimage())
+            true // Consume the long-press event
+        }
+
+        button2.setOnLongClickListener {
+            // Display the first image when button1 is long-pressed
+            replaceFragment(NonVitalimage())
+            true // Consume the long-press event
+        }
+
+        button3.setOnLongClickListener {
+            // Display the first image when button1 is long-pressed
+            replaceFragment(Rsaimage())
+            true // Consume the long-press event
         }
 
         return view

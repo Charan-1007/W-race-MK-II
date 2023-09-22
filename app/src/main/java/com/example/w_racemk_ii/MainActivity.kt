@@ -1,7 +1,8 @@
 package com.example.w_racemk_ii
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.w_racemk_ii.about.About
 import com.example.w_racemk_ii.home.Home
