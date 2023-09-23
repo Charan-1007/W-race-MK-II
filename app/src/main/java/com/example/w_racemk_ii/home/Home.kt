@@ -23,12 +23,11 @@ class Home : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
 
-        // Find the buttons by their IDs
+
         val button = view.findViewById<Button>(R.id.button)
         val button2 = view.findViewById<Button>(R.id.button2)
         val button3 = view.findViewById<Button>(R.id.button3)
 
-        // Set click listeners for each button
         button.setOnClickListener {
             // Replace the current fragment with the VitalFragment
             replaceFragment(Vital())
@@ -46,21 +45,19 @@ class Home : Fragment() {
 
 
         button.setOnLongClickListener {
-            // Display the first image when button1 is long-pressed
+            // Display the first image when button is long-pressed
             replaceFragment(Vitalimage())
             true // Consume the long-press event
         }
 
         button2.setOnLongClickListener {
-            // Display the first image when button1 is long-pressed
             replaceFragment(NonVitalimage())
-            true // Consume the long-press event
+            true
         }
 
         button3.setOnLongClickListener {
-            // Display the first image when button1 is long-pressed
             replaceFragment(Rsaimage())
-            true // Consume the long-press event
+            true
         }
 
         return view
@@ -69,7 +66,7 @@ class Home : Fragment() {
     private fun replaceFragment(fragment: Fragment) {
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
 
-        // Delay the start of the animation by a small fraction of time (e.g., 100 milliseconds)
+        // Delay the start of the animation by a small fraction of time
         val delayMillis = 150
         view?.postDelayed({
             transaction.setCustomAnimations(
@@ -77,7 +74,7 @@ class Home : Fragment() {
                 R.anim.slide_out  // Exit animation
             )
             transaction.replace(R.id.frame, fragment)
-            transaction.addToBackStack(null) // Optional: Add to back stack
+            transaction.addToBackStack(null)
             transaction.commit()
         }, delayMillis.toLong())
     }
